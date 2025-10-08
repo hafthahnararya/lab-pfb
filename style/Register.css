@@ -1,0 +1,147 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: url(Background\ Homepage.jpg);
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 15px 15px;  /* ini tu formatnya top right bottom left */
+    background-color: #263342;
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.kotak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.kotakdlm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 30px 20px 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+
+.registheader{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registheader h1{
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.registheader p{
+    margin: 0;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+.usn{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.usn input{
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+}
+
+.email{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.email input{
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+}
+
+.password{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.password input{
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+}
+
+.passwordconfirm{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.passwordconfirm input{
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+}
+
+.submit{
+    justify-content: center;
+    text-align: center;
+
+}
+
+.submit button{
+    font-weight: bold;
+    color: white ;
+    background-color: rgb(12, 155, 2);
+    border-radius: 4px;
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+}
+
+.linklogin{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.linklogin a {
+    text-decoration: none;
+    color: rgb(41, 174, 214);
+}
