@@ -1,0 +1,134 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: url(Background\ Homepage.jpg);
+    backdrop-filter: blur(10px);
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 15px 15px;  /* ini tu formatnya top right bottom left */
+    background-color: #263342;
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.kotak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.kotakdlm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 30px 17px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+
+.loginheader{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginheader h1{
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.loginheader p{
+    margin: 0;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+.usn{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.usn input{
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+}
+
+.pass{
+    font-weight: bold;
+    justify-self: center;
+}
+
+.pass input{
+    width: 250px;
+    height: 35px;
+}
+
+.checkremember{
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.submit{
+    justify-content: center;
+    text-align: center;
+
+}
+
+.submit button{
+    font-weight: bold;
+    color: white ;
+    background-color: rgb(12, 155, 2);
+    border-radius: 4px;
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+}
+
+.linkregist{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.linkregist a {
+    text-decoration: none;
+    color: rgb(41, 174, 214);
+}
+
+
