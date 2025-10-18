@@ -1,68 +1,75 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
-    <link rel="stylesheet" href="style/Register.css">
-</head>
-<body>
-    <header>
-        <a href="">Vincraft Community</a>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Browse">Browse Posts</a></li>
-                <li><a href="#Login">Login</a></li>
-                <li><a href="#Register">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="kotak">
-        <div class="kotakdlm">
-            <div class="registheader">
-                <h1>Register</h1>
-                <p>Join the Vincraft Community</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Page</title>
+        <link rel="stylesheet" href="../style/Register.css">
+    </head>
+    <body>
+        <header>
+            <a href>Vincraft Community</a>
+            <nav>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="#Browse">Browse Posts</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Register.html">Register</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="kotak">
+            <div class="kotakdlm">
+                <div class="registheader">
+                    <h1>Register</h1>
+                    <p>Join the Vincraft Community</p>
+                </div>
+                <form action="../Database/process_register.php" method="post"
+                    id="registerForm">
+                    <div class="usn">
+                        <label for="UsernameInput">Username</label>
+                        <br>
+                        <input type="text" id="UsernameInput" name="Username"
+                            value required>
+                    </div>
+                    <br>
+                    <div class="email">
+                        <label for="EmailInput">Email</label>
+                        <br>
+                        <input type="email" name="Email" id="EmailInput" value
+                            required>
+                    </div>
+                    <br>
+                    <div class="password">
+                        <label for="PasswordInput">Password</label>
+                        <br>
+                        <input type="password" name="Password"
+                            id="PasswordInput" value required>
+                    </div>
+                    <br>
+                    <div class="passwordconfirm">
+                        <label for="ConfirmPasswordInput">Confirm
+                            Password</label>
+                        <br>
+                        <input type="password" name="ConfirmPassword"
+                            id="ConfirmPasswordInput" value required>
+                    </div>
+                    <br>
+                    <div class="submit">
+                        <button type="submit">Register</button>
+                    </div>
+
+                    <div class="linklogin">
+                        Already have an account?<a href="Login.htmls"> Login
+                            here</a>
+                    </div>
+
+                </form>
             </div>
+        </section>
 
-            <form action="/submit" id="">
-                <div class="usn">
-                    <label for="UsernameInput">Username</label>
-                    <br>
-                    <input type="text" id="UsernameInput" name="Username" value="Username">
-                </div>
-                <br>
-                <div class="email">
-                    <label for="EmailInput">Email</label>
-                    <br>
-                    <input type="email" name="Email" id="EmailInput" value="Email">
-                </div>
-                <br>
-                <div class="password">
-                    <label for="PasswordInput">Password</label>
-                    <br>
-                    <input type="password" name="Password" id="PasswordInput" value="Password">
-                </div>
-                <br>
-                <div class="passwordconfirm">
-                    <label for="ConfirmPasswordInput">Confirm Password</label>
-                    <br>
-                    <input type="password" name="ConfirmPassword" id="ConfirmPasswordInput" value="ConfirmPassword">
-                </div>
-                <br>
-                <div class="submit">
-                    <button type="submit">Register</button>
-                </div>
-
-                <div class="linklogin">
-                    Already have an account?<a href="#Login"> Login here</a>
-                </div>
-
-            </form>
-        </div>
-    </section>
-</body>
+        <script src="../JavaScript/register.js"></script>
+    </body>
 </html>
-
-
