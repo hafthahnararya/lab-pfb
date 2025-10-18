@@ -1,7 +1,6 @@
-
 body{
     font-family: 'Times New Roman', Times, serif;
-    background: url(Background\ Homepage.jpg);
+    background: url(../assets/Background\ Homepage.jpg);
     backdrop-filter: blur(10px);
     margin: 0;
     height: 100vh;
@@ -25,6 +24,21 @@ header a{
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
+}
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-input {
+    border: 1px solid #ff0000 !important;
+    background-color: #fff5f5;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 
