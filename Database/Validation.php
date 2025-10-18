@@ -1,5 +1,5 @@
 <?php
-function validateRegistration($username, $email, $password) {
+function validateRegistration($username,$email,$password) {
     $errors = [];
 
     if (empty($username)) {
@@ -12,7 +12,7 @@ function validateRegistration($username, $email, $password) {
     if (empty($email)) {
         $errors['email'] = "Email must be filled";
     } 
-    elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    elseif (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = "Invalid email format";
     } 
     else {
@@ -27,7 +27,7 @@ function validateRegistration($username, $email, $password) {
             $errors['email'] = "Email contains invalid character sequences";
         }
         
-        if ($email[0] === '@' || $email[0] === '.' || 
+        if ($email[0] === '@'||$email[0] === '.' || 
             $email[strlen($email)-1] === '@' || $email[strlen($email)-1] === '.') {
             $errors['email'] = "Email cannot start or end with @ or .";
         }
