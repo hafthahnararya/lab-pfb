@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style/Login.css">
+    <link rel="stylesheet" href="../style/Login.css">
 </head>
 
 <body>
@@ -12,10 +12,10 @@
         <a href="">Vincraft Community</a>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="Homepage.html">Home</a></li>
                 <li><a href="#Browse">Browse Posts</a></li>
-                <li><a href="#Login">Login</a></li>
-                <li><a href="#Register">Register</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Register.html">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -28,21 +28,21 @@
                 <p>Welcome back to Vincraft Community</p>
             </div>
 
-            <form action="/submit" id="">
+            <form action="../Database/process_login.php" method="post" id="loginForm">
                 <div class="usn">
                     <label for="UsernameInput">Username</label>
                     <br>
-                    <input type="text" id="UsernameInput" name="Username" value="Username">
+                    <input type="text" id="UsernameInput" name="Username" value="" required>
                 </div>
                 <br>
                 <div class="pass">
                     <label for="PasswordInput">Password</label>
                     <br>
-                    <input type="password" name="Password" id="PasswordInput" value="Password">
+                    <input type="password" name="Password" id="PasswordInput" value="" required>
                 </div>
                 
                 <div class="checkremember">
-                    <input type="checkbox" name="RememberMe" id="CheckRememberMe" value="RememberMe">
+                    <input type="checkbox" name="RememberMe" id="CheckRememberMe" value="">
                     <label for="CheckRememberMe">Remember Me</label>
                 </div>
 
@@ -51,12 +51,14 @@
                 </div>
 
                 <div class="linkregist">
-                    Don't have an account yet?<a href="#Register"> Register Here</a>
+                    Don't have an account yet?<a href="Register.html"> Register Here</a>
                 </div>
 
             </form>
         </div>
     </section>
+
+    <script src="../JavaScript/login.js"></script>
 </body>
 </html>
 
