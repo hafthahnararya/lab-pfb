@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background: url(Background\ Homepage.jpg);
+    background: url(../assets/Background\ Homepage.jpg);
     margin: 0;
     height: 100vh;
     background-size: cover;
@@ -14,11 +14,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px 15px 15px;  /* ini tu formatnya top right bottom left */
+    padding: 15px 50px 15px 15px;  
+    
     background-color: #263342;
 }
 
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
+.error-input {
+    border: 1px solid #ff0000 !important;
+    background-color: #fff5f5;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 header a{
     color: white;
     text-decoration: none;
