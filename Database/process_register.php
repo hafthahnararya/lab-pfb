@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'database.php';
-require_once 'validation_functions.php';
+require_once 'Validation.php';
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
     $username=trim($_POST['Username']);
