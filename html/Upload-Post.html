@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Post</title>
+    <link rel="stylesheet" href="../style/Upload-Post.css">
+</head>
+<body>
+   <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="navbarhead">VinCraft Community</h1>
+                <ul class="navbarmenu">
+                    <a href="homepage.html" class="navbarlink">Home</a>
+                    <a href="BrowsePost.html" class="navbarlink">Browse Posts</a>
+                    <a href="Upload-Post.html" class="navbarlink">Upload Post</a>
+                    <a href="my-post.html" class="navbarlink">My Posts</a>
+                    <a href="#" class="navbarlink">Logout</a>
+                    <span class="nav-user">Welcome, Vincent!</span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="box">
+        <div class="titlee">
+            <h2>Upload Post</h2>
+            <p>Share your creations with the community</p>
+        </div>
+
+        <div class="formcont">
+            <form>
+                <div class="input">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="input">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">--  choose  --</option>
+                        <option value="buildings">Mods</option>
+                        <option value="redstone">News</option>
+                        <option value="survival">Redstone</option>
+                        <option value="creative">Builds</option>
+                        <option value="landscape">Tutorial</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="input">
+                    <label for="video">Video Link <span class="optional-label">(optional)</span></label>
+                    <input type="text" id="video" name="video" placeholder="">
+                </div>
+
+                <div class="input">
+                    <label for="thumbnail">Thumbnail Image (<150 MB) </label>
+                    <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+                </div>
+
+                <button type="submit" class="subbutton">Publish</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 VinCraft Community. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
