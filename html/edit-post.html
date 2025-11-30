@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="edit-post.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="navbarhead">VinCraft Community</h1>
+                <ul class="navbarmenu">
+                    <a href="#" class="navbarlink">Home</a>
+                    <a href="#" class="navbarlink">Browse Posts</a>
+                    <a href="#" class="navbarlink">Upload Post</a>
+                    <a href="#" class="navbarlink">My Posts</a>
+                    <a href="#" class="navbarlink">Logout</a>
+                    <span class="nav-user">Welcome, Vincent!</span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="card">
+        <h1>Edit Post</h1>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="Cozy Vibes Only - No More Boring Mansions!">
+            </div>
+
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="builds" selected>Builds</option>
+                    <option value="tutorials">Tutorials</option>
+                    <option value="survival">Survival</option>
+                    <option value="redstone">Mods</option>
+                    <option value="redstone">Challenges</option>
+                    <option value="redstone">Bedwar</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description">Tired of those oversized mansion builds? Same. I went for a chill, cozy house this time and it's honestly the comfiest vibe ever 😌 Perfect for survival or just straight-up relaxing. Peep the build and get inspired!</textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="video-link">Video Link</label>
+                <input type="url" id="video-link" name="video-link" value="https://www.youtube.com/watch?v=fuH2EqvBfJ8">
+            </div>
+
+            <div class="image-preview">
+                <img src="./assets/minecraft-house.jpg" alt="Minecraft House Build">
+            </div>
+
+            <div class="form-group">
+                <label for="thumbnail">Replace Thumbnail (Optional)</label>
+                <input type="file" id="thumbnail" name="thumbnail">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-save">Save Changes</button>
+                <button type="button" class="btn-delete">Delete</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2025 VinCraft Community. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
