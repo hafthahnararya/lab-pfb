@@ -1,0 +1,212 @@
+*,html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #2196F3;
+    --primary-dark: #1976D2;
+    --success-color: #4CAF50;
+    --dark-bg: #2C3E50;
+    --light-bg: #C9D6DF;
+    --card-bg: #FFFFFF;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-light: rgba(255, 255, 255, 0.9);
+    --border-radius: 8px;
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+}
+
+body{
+    background-image: url('../assets/Background Homepage.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+.header{
+    background-color:var(--dark-bg);
+    padding: var(--spacing-sm) 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.navbarhead{
+    color: var(--text-light);
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.navbarmenu{
+    display: flex;
+    list-style:none;
+    gap:initial;
+}
+
+.navbarlink{
+    color: var(--text-light);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+}
+
+.navbarlink:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-user {
+    font-weight: 700;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    color: var(--text-light);
+}
+
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 70px auto ;
+
+}
+
+.titlee{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.formcont{
+    justify-content: left;
+  
+}
+
+.input {
+    margin-bottom: 13px;
+
+}
+
+.input label {
+    display: block;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 0px;
+}
+
+.input input[type="text"],
+.input select,
+.input textarea {
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s;
+    min-width: 550px;
+}
+
+.input input[type="text"]:focus,
+.input select:focus,
+.input textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.input select {
+    cursor: pointer;
+    background-color: white;
+}
+
+.input textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.input input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+.subbutton {
+        width: 100%;
+        padding: 12px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+.kotakfooter{
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color:white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footertext {
+    font-size: 15px;
+}
+
+footer{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left:0;
+    bottom:0;
+    width:100%;
+    min-height: 40px;
+    background-color: #263342;
+}
