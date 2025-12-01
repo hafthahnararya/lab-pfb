@@ -100,7 +100,6 @@ body{
     text-transform: uppercase;
     font-size: 32px;
     text-align: center;
-    letter-spacing: 0.3em; 
     margin-bottom: 30px;
     color: white;
     text-shadow: 
@@ -188,4 +187,5 @@ footer p{
     justify-content: space-around;
     font-size: 14px;
 }
+
 
