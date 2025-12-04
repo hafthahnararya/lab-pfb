@@ -17,9 +17,6 @@
     --spacing-xl: 60px;
 }
 
-
-
-
 *,html{
     padding: 0;
     margin: 0;
@@ -54,9 +51,6 @@ a {
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
-
-
-
 
 .header{
     background-color:var(--dark-bg);
@@ -106,7 +100,6 @@ a {
     max-width: 800px;        
     margin: 0 auto;          
 }
-
 
 .welcometitle {
     font-size: 2rem;         
@@ -288,8 +281,6 @@ h1{
     padding-left:150px;
 }
 
-
-
 main{
     justify-content: center;
     align-items: center; 
@@ -297,8 +288,6 @@ main{
     flex:1;
     overflow: hidden;
 }
-
-
 
 footer{
     position:fixed;
@@ -313,3 +302,4 @@ footer p{
     text-align: center;
     justify-content: space-around;
 }
+
